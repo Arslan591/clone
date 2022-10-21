@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
+
+// const my = new Person("ts","td","sf","sd");
+// console.log(my);
+
+// function callback(pr1,pr2){}
+
+// function proCopy(clb){
+//   this.clb=function (prc1,prc2){
+//         this.prc1 = function(p1){}
+//         this.prc2 = function(p2){}
+//   }
+//     this.Cthan = function (prc1,prc2){
+//         this.prc1 = function(p1){}
+//         this.prc2 = function(p2){}
+//     }
+    
+// }
+
+// let nc = new proCopy((pr1,pr2)=>{
+//     pr1('Done');  
+//     pr2 ('Eror');
+// })
+
+// console.log(nc);
+// // console.log(nc.Cthan(function(value){console.log(value)},
+// //            function(er){console.log(er)}
+// // ));
+// function getData(){
+//   let test = new Promise((resolve,reject)=>{
+//     let x=0;
+//     if(x==0){
+//       resolve("Done");
+//     }
+//     if(x!=0){
+//       reject("Reject")
+//     }
+//   })
+
+//   test.then(
+//     function(value){console.log(value)},
+//     function(err){console.log(err)}
+//   )
+// }
+function cloneCop(st){
+//  st(st1(),st2());
+  this.than=function(st1){
+  st1('Done');
+  }
+}
+function st(st1,st2){
+ st1('Sone'),st2('Reject')
+}
+function st1(res){
+console.log(res);
+}
+function st2(res){
+  console.log(res);
+}
+
+let c = new cloneCop((resl1,resl2)=>{
+  resl1('Done');
+});
+
+console.log(c.than());
+
+    </script>
+</body>
+</html>
